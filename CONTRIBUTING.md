@@ -1,3 +1,5 @@
+# Contributing
+
 This is a set of contribution guidelines that should be followed by contributors in order to create a well-readable and consistent code.
 
 Due to IDE changes throughout the lifecycle of this project (Notepad++ -> Atom -> VS Code) and constant improvements of my coding style :'), these guidelines may not apply to already existing code.
@@ -6,19 +8,21 @@ Over time, improvements over already existing code in order for it to support th
 
 This is a WIP document, [you can submit an issue](https://github.com/jakubg1/OpenSMCE/issues/new/choose) if you want to help.
 
-
-
 ## Editing
+
 The recommended IDE to use is **Visual Studio Code**. It offers a set of plugins which can massively enhance development experience.
 
 We recommend you to use the following plugins:
+
 - **Lua** plugin by **sumneko**
 - **Love2D support** plugin by **Pixelbyte Studios**
 
 Any other plugins are optional.
 
 ## Source code format
+
 ### Bare basics
+
 - All variables, class names or other structures should be named in a camelCase, unless stated otherwise.
 - All global variables should be defined in `main.lua` and their names should start with an underscore and the first character should be a capital letter.
   For example: `_MousePos`
@@ -33,7 +37,9 @@ Any other plugins are optional.
     - If you want to make such one, open a ticket on the issue list first and talk about it with other developers!
 
 ### Overall file format
+
 - This is the general structure of a class:
+
   ```lua
   -- we are going to use the com/class.lua file to access class-related methods and be able to create classes
   local class = require "com/class"
@@ -86,15 +92,19 @@ Any other plugins are optional.
 - All functions should be documented.
 
 ### Tabs, spaces and other whitespace
+
 - The recommended indentation is 4 spaces. Note that not all files support that yet.
 - There should be exactly three empty lines between each function.
   - An exception to this rule is a gap between two closely related functions with short bodies; in that case, one empty line is enough.
 - Avoid creating scopes or putting multiple statements in the same line.
   For example, instead of writing code like this:
+
   ```lua
   for i, item in ipairs(items) do if item.nonexistent then return end end
   ```
+
   write it like this:
+
   ```lua
   for i, item in ipairs(items) do
       if item.nonexistent then
