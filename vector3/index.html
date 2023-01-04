@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Vector3 - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Vector3";
+        var mkdocs_page_input_path = "vector3.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible/">Collectible</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible_effect/">Collectible Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gameplay/">Gameplay</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highscores/">Highscores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter/">Shooter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter_movement/">Shooter Movement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere/">Sphere</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_effect/">Sphere Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_hit_behavior/">Sphere Hit Behavior</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Structures</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../color/">Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector2/">Vector2</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Vector3</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#vector3-type">Vector3 Type</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../about/license.md">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../about/release-notes.md">Release Notes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Structures &raquo;</li>
+      <li>Vector3</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="vector3-schema">Vector3 Schema</h1>
+<pre><code class="language-txt">undefined
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Abstract</th>
+<th align="left">Extensible</th>
+<th align="left">Status</th>
+<th align="left">Identifiable</th>
+<th align="left">Custom Properties</th>
+<th align="left">Additional Properties</th>
+<th align="left">Access Restrictions</th>
+<th align="left">Defined In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Can be instantiated</td>
+<td align="left">No</td>
+<td align="left">Unknown status</td>
+<td align="left">No</td>
+<td align="left">Forbidden</td>
+<td align="left">Allowed</td>
+<td align="left">none</td>
+<td align="left"><a href="_structures/Vector3.json" title="open original schema">Vector3.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vector3-type">Vector3 Type</h2>
+<p><code>object</code> (<a href="./">Vector3</a>)</p>
+<h1 id="vector3-properties">Vector3 Properties</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Type</th>
+<th align="left">Required</th>
+<th align="left">Nullable</th>
+<th align="left">Defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#x">x</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector3-properties-x/" title="undefined#/properties/x">Vector3</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#y">y</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector3-properties-y/" title="undefined#/properties/y">Vector3</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#z">z</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector3-properties-z/" title="undefined#/properties/z">Vector3</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="x">x</h2>
+<p>The horizontal component of a 3D vector.</p>
+<p><code>x</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector3-properties-x/" title="undefined#/properties/x">Vector3</a></p>
+</li>
+</ul>
+<h3 id="x-type">x Type</h3>
+<p><code>number</code></p>
+<h2 id="y">y</h2>
+<p>The vertical component of a 3D vector.</p>
+<p><code>y</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector3-properties-y/" title="undefined#/properties/y">Vector3</a></p>
+</li>
+</ul>
+<h3 id="y-type">y Type</h3>
+<p><code>number</code></p>
+<h2 id="z">z</h2>
+<p>The depth component of a 3D vector.</p>
+<p><code>z</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector3-properties-z/" title="undefined#/properties/z">Vector3</a></p>
+</li>
+</ul>
+<h3 id="z-type">z Type</h3>
+<p><code>number</code></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../vector2/" class="btn btn-neutral float-left" title="Vector2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../vector2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

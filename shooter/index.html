@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Shooter - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shooter";
+        var mkdocs_page_input_path = "shooter.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configs</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible/">Collectible</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible_effect/">Collectible Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gameplay/">Gameplay</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highscores/">Highscores</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Shooter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#shooter-type">Shooter Type</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter_movement/">Shooter Movement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere/">Sphere</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_effect/">Sphere Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_hit_behavior/">Sphere Hit Behavior</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Structures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color/">Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector2/">Vector2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector3/">Vector3</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../about/license.md">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../about/release-notes.md">Release Notes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Configs &raquo;</li>
+      <li>Shooter</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shooter-schema">Shooter Schema</h1>
+<pre><code class="language-txt">undefined
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Abstract</th>
+<th align="left">Extensible</th>
+<th align="left">Status</th>
+<th align="left">Identifiable</th>
+<th align="left">Custom Properties</th>
+<th align="left">Additional Properties</th>
+<th align="left">Access Restrictions</th>
+<th align="left">Defined In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Can be instantiated</td>
+<td align="left">No</td>
+<td align="left">Unknown status</td>
+<td align="left">No</td>
+<td align="left">Forbidden</td>
+<td align="left">Forbidden</td>
+<td align="left">none</td>
+<td align="left"><a href="config/shooter.json" title="open original schema">shooter.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shooter-type">Shooter Type</h2>
+<p><code>object</code> (<a href="./">Shooter</a>)</p>
+<h1 id="shooter-properties">Shooter Properties</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Type</th>
+<th align="left">Required</th>
+<th align="left">Nullable</th>
+<th align="left">Defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#schema">$schema</a></td>
+<td align="left">Not specified</td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="undefined.md" title="undefined#undefined">Untitled schema</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#movement">movement</a></td>
+<td align="left">Merged</td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter_movement/" title="undefined#/properties/movement">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#sprite">sprite</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-sprite/" title="undefined#/properties/sprite">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#spriteoffset">spriteOffset</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/spriteOffset">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#spriteanchor">spriteAnchor</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/spriteAnchor">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shadowsprite">shadowSprite</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-shadowsprite/" title="undefined#/properties/shadowSprite">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shadowspriteoffset">shadowSpriteOffset</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/shadowSpriteOffset">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shadowspriteanchor">shadowSpriteAnchor</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/shadowSpriteAnchor">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#nextballsprites">nextBallSprites</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-nextballsprites/" title="undefined#/properties/nextBallSprites">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#nextballoffset">nextBallOffset</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/nextBallOffset">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#nextballanchor">nextBallAnchor</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/nextBallAnchor">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#reticle">reticle</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-reticle/" title="undefined#/properties/reticle">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#speedshotbeam">speedShotBeam</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-speedshotbeam/" title="undefined#/properties/speedShotBeam">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#sounds">sounds</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-sounds/" title="undefined#/properties/sounds">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#speedshotparticle">speedShotParticle</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-speedshotparticle/" title="undefined#/properties/speedShotParticle">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shotcooldown">shotCooldown</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-shotcooldown/" title="undefined#/properties/shotCooldown">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#multishot">multishot</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-multishot/" title="undefined#/properties/multishot">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shootspeed">shootSpeed</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../shooter-properties-shootspeed/" title="undefined#/properties/shootSpeed">Shooter</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#hitboxsize">hitboxSize</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../vector2/" title="undefined#/properties/hitboxSize">Shooter</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">$schema</h2>
+<p>no description</p>
+<p><code>$schema</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: unknown</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="undefined.md" title="undefined#undefined">Untitled schema</a></p>
+</li>
+</ul>
+<h3 id="untitled-schema-type">Untitled schema Type</h3>
+<p>unknown</p>
+<h2 id="movement">movement</h2>
+<p>Describes the positioning and movement of the shooter.</p>
+<p><code>movement</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../shooter_movement/">Shooter Movement</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter_movement/" title="undefined#/properties/movement">Shooter</a></p>
+</li>
+</ul>
+<h3 id="movement-type">movement Type</h3>
+<p><code>object</code> (<a href="../shooter_movement/">Shooter Movement</a>)</p>
+<p>all of</p>
+<ul>
+<li>
+<p><a href="../shooter_movement-allof-0/" title="check type definition">Untitled undefined type in Shooter Movement</a></p>
+</li>
+<li>
+<p><a href="../shooter_movement-allof-1/" title="check type definition">Untitled undefined type in Shooter Movement</a></p>
+</li>
+<li>
+<p><a href="../shooter_movement-allof-2/" title="check type definition">Untitled undefined type in Shooter Movement</a></p>
+</li>
+</ul>
+<h2 id="sprite">sprite</h2>
+<p>The sprite for the shooter to be used.</p>
+<p><code>sprite</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-sprite/" title="undefined#/properties/sprite">Shooter</a></p>
+</li>
+</ul>
+<h3 id="sprite-type">sprite Type</h3>
+<p><code>string</code></p>
+<h2 id="spriteoffset">spriteOffset</h2>
+<p>The offset of the shooter sprite.</p>
+<p><code>spriteOffset</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/spriteOffset">Shooter</a></p>
+</li>
+</ul>
+<h3 id="spriteoffset-type">spriteOffset Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="spriteanchor">spriteAnchor</h2>
+<p>The anchor point of the shooter sprite.</p>
+<p><code>spriteAnchor</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/spriteAnchor">Shooter</a></p>
+</li>
+</ul>
+<h3 id="spriteanchor-type">spriteAnchor Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="shadowsprite">shadowSprite</h2>
+<p>The shadow sprite for the shooter to be used.</p>
+<p><code>shadowSprite</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-shadowsprite/" title="undefined#/properties/shadowSprite">Shooter</a></p>
+</li>
+</ul>
+<h3 id="shadowsprite-type">shadowSprite Type</h3>
+<p><code>string</code></p>
+<h2 id="shadowspriteoffset">shadowSpriteOffset</h2>
+<p>The offset of the shooter shadow sprite.</p>
+<p><code>shadowSpriteOffset</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/shadowSpriteOffset">Shooter</a></p>
+</li>
+</ul>
+<h3 id="shadowspriteoffset-type">shadowSpriteOffset Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="shadowspriteanchor">shadowSpriteAnchor</h2>
+<p>The anchor point of the shooter shadow sprite.</p>
+<p><code>shadowSpriteAnchor</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/shadowSpriteAnchor">Shooter</a></p>
+</li>
+</ul>
+<h3 id="shadowspriteanchor-type">shadowSpriteAnchor Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="nextballsprites">nextBallSprites</h2>
+<p>Contains next ball sprites for all possible sphere colors.</p>
+<p><code>nextBallSprites</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../shooter-properties-nextballsprites/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-nextballsprites/" title="undefined#/properties/nextBallSprites">Shooter</a></p>
+</li>
+</ul>
+<h3 id="nextballsprites-type">nextBallSprites Type</h3>
+<p><code>object</code> (<a href="../shooter-properties-nextballsprites/">Details</a>)</p>
+<h2 id="nextballoffset">nextBallOffset</h2>
+<p>The offset of the shooter's next ball sprite.</p>
+<p><code>nextBallOffset</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/nextBallOffset">Shooter</a></p>
+</li>
+</ul>
+<h3 id="nextballoffset-type">nextBallOffset Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="nextballanchor">nextBallAnchor</h2>
+<p>The anchor point of the shooter's next ball sprite.</p>
+<p><code>nextBallAnchor</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/nextBallAnchor">Shooter</a></p>
+</li>
+</ul>
+<h3 id="nextballanchor-type">nextBallAnchor Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+<h2 id="reticle">reticle</h2>
+<p>Describes the appearance of a shooting reticle.</p>
+<p><code>reticle</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../shooter-properties-reticle/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-reticle/" title="undefined#/properties/reticle">Shooter</a></p>
+</li>
+</ul>
+<h3 id="reticle-type">reticle Type</h3>
+<p><code>object</code> (<a href="../shooter-properties-reticle/">Details</a>)</p>
+<h2 id="speedshotbeam">speedShotBeam</h2>
+<p>Describes the appearance of a speed shot beam.</p>
+<p><code>speedShotBeam</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../shooter-properties-speedshotbeam/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-speedshotbeam/" title="undefined#/properties/speedShotBeam">Shooter</a></p>
+</li>
+</ul>
+<h3 id="speedshotbeam-type">speedShotBeam Type</h3>
+<p><code>object</code> (<a href="../shooter-properties-speedshotbeam/">Details</a>)</p>
+<h2 id="sounds">sounds</h2>
+<p>Defines the sounds the shooter makes.</p>
+<p><code>sounds</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../shooter-properties-sounds/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-sounds/" title="undefined#/properties/sounds">Shooter</a></p>
+</li>
+</ul>
+<h3 id="sounds-type">sounds Type</h3>
+<p><code>object</code> (<a href="../shooter-properties-sounds/">Details</a>)</p>
+<h2 id="speedshotparticle">speedShotParticle</h2>
+<p>Persistent particle packet. If defined, it will spawn when a speed shot powerup is obtained, and despawn when the speed shot beam diminishes.</p>
+<p><code>speedShotParticle</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-speedshotparticle/" title="undefined#/properties/speedShotParticle">Shooter</a></p>
+</li>
+</ul>
+<h3 id="speedshotparticle-type">speedShotParticle Type</h3>
+<p><code>string</code></p>
+<h2 id="shotcooldown">shotCooldown</h2>
+<p>The minimum time between the shots, in seconds. If multishot is set to false, this time will be counted since the previous shot sphere has been appended/disappeared.</p>
+<p><code>shotCooldown</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-shotcooldown/" title="undefined#/properties/shotCooldown">Shooter</a></p>
+</li>
+</ul>
+<h3 id="shotcooldown-type">shotCooldown Type</h3>
+<p><code>number</code></p>
+<h3 id="shotcooldown-constraints">shotCooldown Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="multishot">multishot</h2>
+<p>If set, the player will be able to shoot another sphere before the previous one has hit the sphere train.</p>
+<p><code>multishot</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-multishot/" title="undefined#/properties/multishot">Shooter</a></p>
+</li>
+</ul>
+<h3 id="multishot-type">multishot Type</h3>
+<p><code>boolean</code></p>
+<h2 id="shootspeed">shootSpeed</h2>
+<p>The default speed of how fast the shot spheres will be, in pixels per second.</p>
+<p><code>shootSpeed</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../shooter-properties-shootspeed/" title="undefined#/properties/shootSpeed">Shooter</a></p>
+</li>
+</ul>
+<h3 id="shootspeed-type">shootSpeed Type</h3>
+<p><code>number</code></p>
+<h3 id="shootspeed-constraints">shootSpeed Constraints</h3>
+<p><strong>minimum (exclusive)</strong>: the value of this number must be greater than: <code>0</code></p>
+<h2 id="hitboxsize">hitboxSize</h2>
+<p>The size of the Shooter's hitbox in pixels.</p>
+<p><code>hitboxSize</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../vector2/" title="undefined#/properties/hitboxSize">Shooter</a></p>
+</li>
+</ul>
+<h3 id="hitboxsize-type">hitboxSize Type</h3>
+<p><code>object</code> (<a href="../vector2/">Vector2</a>)</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../highscores/" class="btn btn-neutral float-left" title="Highscores"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../shooter_movement/" class="btn btn-neutral float-right" title="Shooter Movement">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../highscores/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../shooter_movement/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Gameplay - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gameplay";
+        var mkdocs_page_input_path = "gameplay.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configs</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible/">Collectible</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible_effect/">Collectible Effect</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Gameplay</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#gameplay-type">Gameplay Type</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highscores/">Highscores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter/">Shooter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter_movement/">Shooter Movement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere/">Sphere</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_effect/">Sphere Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_hit_behavior/">Sphere Hit Behavior</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Structures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color/">Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector2/">Vector2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector3/">Vector3</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../about/license.md">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../about/release-notes.md">Release Notes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Configs &raquo;</li>
+      <li>Gameplay</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="gameplay-schema">Gameplay Schema</h1>
+<pre><code class="language-txt">undefined
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Abstract</th>
+<th align="left">Extensible</th>
+<th align="left">Status</th>
+<th align="left">Identifiable</th>
+<th align="left">Custom Properties</th>
+<th align="left">Additional Properties</th>
+<th align="left">Access Restrictions</th>
+<th align="left">Defined In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Can be instantiated</td>
+<td align="left">No</td>
+<td align="left">Unknown status</td>
+<td align="left">No</td>
+<td align="left">Forbidden</td>
+<td align="left">Forbidden</td>
+<td align="left">none</td>
+<td align="left"><a href="config/gameplay.json" title="open original schema">gameplay.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gameplay-type">Gameplay Type</h2>
+<p><code>object</code> (<a href="./">Gameplay</a>)</p>
+<h1 id="gameplay-properties">Gameplay Properties</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Type</th>
+<th align="left">Required</th>
+<th align="left">Nullable</th>
+<th align="left">Defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#schema">$schema</a></td>
+<td align="left">Not specified</td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="undefined.md" title="undefined#undefined">Untitled schema</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#level">level</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../gameplay-properties-level/" title="undefined#/properties/level">Gameplay</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#spherebehaviour">sphereBehaviour</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../gameplay-properties-sphere-behavior/" title="undefined#/properties/sphereBehaviour">Gameplay</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#collectiblebehaviour">collectibleBehaviour</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../gameplay-properties-collectiblebehaviour/" title="undefined#/properties/collectibleBehaviour">Gameplay</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#bonusscarab">bonusScarab</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../gameplay-properties-bonusscarab/" title="undefined#/properties/bonusScarab">Gameplay</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#scorpion">scorpion</a></td>
+<td align="left"><code>object</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../gameplay-properties-scorpion/" title="undefined#/properties/scorpion">Gameplay</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">$schema</h2>
+<p>no description</p>
+<p><code>$schema</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: unknown</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="undefined.md" title="undefined#undefined">Untitled schema</a></p>
+</li>
+</ul>
+<h3 id="untitled-schema-type">Untitled schema Type</h3>
+<p>unknown</p>
+<h2 id="level">level</h2>
+<p>Defines some key level times.</p>
+<p><code>level</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../gameplay-properties-level/">Level</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../gameplay-properties-level/" title="undefined#/properties/level">Gameplay</a></p>
+</li>
+</ul>
+<h3 id="level-type">level Type</h3>
+<p><code>object</code> (<a href="../gameplay-properties-level/">Level</a>)</p>
+<h2 id="spherebehaviour">sphereBehaviour</h2>
+<p>Defines behavior of the spheres.</p>
+<p><code>sphereBehaviour</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../gameplay-properties-sphere-behavior/">Sphere Behavior</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../gameplay-properties-sphere-behavior/" title="undefined#/properties/sphereBehaviour">Gameplay</a></p>
+</li>
+</ul>
+<h3 id="spherebehaviour-type">sphereBehaviour Type</h3>
+<p><code>object</code> (<a href="../gameplay-properties-sphere-behavior/">Sphere Behavior</a>)</p>
+<h2 id="collectiblebehaviour">collectibleBehaviour</h2>
+<p>Defines how Collectibles behave.</p>
+<p><code>collectibleBehaviour</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../gameplay-properties-collectiblebehaviour/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../gameplay-properties-collectiblebehaviour/" title="undefined#/properties/collectibleBehaviour">Gameplay</a></p>
+</li>
+</ul>
+<h3 id="collectiblebehaviour-type">collectibleBehaviour Type</h3>
+<p><code>object</code> (<a href="../gameplay-properties-collectiblebehaviour/">Details</a>)</p>
+<h2 id="bonusscarab">bonusScarab</h2>
+<p>Defines the Bonus Scarab.</p>
+<p><code>bonusScarab</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../gameplay-properties-bonusscarab/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../gameplay-properties-bonusscarab/" title="undefined#/properties/bonusScarab">Gameplay</a></p>
+</li>
+</ul>
+<h3 id="bonusscarab-type">bonusScarab Type</h3>
+<p><code>object</code> (<a href="../gameplay-properties-bonusscarab/">Details</a>)</p>
+<h2 id="scorpion">scorpion</h2>
+<p>Defines the Scorpion.</p>
+<p><code>scorpion</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../gameplay-properties-scorpion/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../gameplay-properties-scorpion/" title="undefined#/properties/scorpion">Gameplay</a></p>
+</li>
+</ul>
+<h3 id="scorpion-type">scorpion Type</h3>
+<p><code>object</code> (<a href="../gameplay-properties-scorpion/">Details</a>)</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../collectible_effect/" class="btn btn-neutral float-left" title="Collectible Effect"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../highscores/" class="btn btn-neutral float-right" title="Highscores">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../collectible_effect/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../highscores/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

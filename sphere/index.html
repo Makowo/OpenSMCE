@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Sphere - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sphere";
+        var mkdocs_page_input_path = "sphere.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configs</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible/">Collectible</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible_effect/">Collectible Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gameplay/">Gameplay</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highscores/">Highscores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter/">Shooter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter_movement/">Shooter Movement</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Sphere</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#sphere-type">Sphere Type</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_effect/">Sphere Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_hit_behavior/">Sphere Hit Behavior</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Structures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color/">Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector2/">Vector2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector3/">Vector3</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../about/license.md">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../about/release-notes.md">Release Notes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Configs &raquo;</li>
+      <li>Sphere</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sphere-schema">Sphere Schema</h1>
+<pre><code class="language-txt">undefined
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Abstract</th>
+<th align="left">Extensible</th>
+<th align="left">Status</th>
+<th align="left">Identifiable</th>
+<th align="left">Custom Properties</th>
+<th align="left">Additional Properties</th>
+<th align="left">Access Restrictions</th>
+<th align="left">Defined In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Can be instantiated</td>
+<td align="left">No</td>
+<td align="left">Unknown status</td>
+<td align="left">No</td>
+<td align="left">Forbidden</td>
+<td align="left">Forbidden</td>
+<td align="left">none</td>
+<td align="left"><a href="config/sphere.json" title="open original schema">sphere.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sphere-type">Sphere Type</h2>
+<p><code>object</code> (<a href="./">Sphere</a>)</p>
+<h1 id="sphere-properties">Sphere Properties</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Type</th>
+<th align="left">Required</th>
+<th align="left">Nullable</th>
+<th align="left">Defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#schema">$schema</a></td>
+<td align="left">Not specified</td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="undefined.md" title="undefined#undefined">Untitled schema</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#sprite">sprite</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-sprite/" title="undefined#/properties/sprite">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shadowsprite">shadowSprite</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-shadowsprite/" title="undefined#/properties/shadowSprite">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#spriteanimationspeed">spriteAnimationSpeed</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-spriteanimationspeed/" title="undefined#/properties/spriteAnimationSpeed">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#spriterollingspeed">spriteRollingSpeed</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-spriterollingspeed/" title="undefined#/properties/spriteRollingSpeed">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#idleparticle">idleParticle</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-idleparticle/" title="undefined#/properties/idleParticle">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroyparticle">destroyParticle</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-destroyparticle/" title="undefined#/properties/destroyParticle">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroycollectible">destroyCollectible</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-destroycollectible/" title="undefined#/properties/destroyCollectible">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroysound">destroySound</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-destroysound/" title="undefined#/properties/destroySound">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#color">color</a></td>
+<td align="left">Merged</td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-color/" title="undefined#/properties/color">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#colorspeed">colorSpeed</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-colorspeed/" title="undefined#/properties/colorSpeed">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#interchangeable">interchangeable</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-interchangeable/" title="undefined#/properties/interchangeable">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shootbehavior">shootBehavior</a></td>
+<td align="left">Merged</td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_shoot_behavior/" title="undefined#/properties/shootBehavior">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shooteffects">shootEffects</a></td>
+<td align="left"><code>array</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-shooteffects/" title="undefined#/properties/shootEffects">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shootspeed">shootSpeed</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-shootspeed/" title="undefined#/properties/shootSpeed">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#shootsound">shootSound</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-shootsound/" title="undefined#/properties/shootSound">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#hitbehavior">hitBehavior</a></td>
+<td align="left">Merged</td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_hit_behavior/" title="undefined#/properties/hitBehavior">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#hitsound">hitSound</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-hitsound/" title="undefined#/properties/hitSound">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#hitsoundbad">hitSoundBad</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-hitsoundbad/" title="undefined#/properties/hitSoundBad">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#type">type</a></td>
+<td align="left">Not specified</td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-type/" title="undefined#/properties/type">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#matches">matches</a></td>
+<td align="left"><code>array</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-matches/" title="undefined#/properties/matches">Sphere</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#matchfont">matchFont</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere-properties-matchfont/" title="undefined#/properties/matchFont">Sphere</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">$schema</h2>
+<p>no description</p>
+<p><code>$schema</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: unknown</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="undefined.md" title="undefined#undefined">Untitled schema</a></p>
+</li>
+</ul>
+<h3 id="untitled-schema-type">Untitled schema Type</h3>
+<p>unknown</p>
+<h2 id="sprite">sprite</h2>
+<p>A sprite to be drawn when the sphere is on the screen.</p>
+<p><code>sprite</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-sprite/" title="undefined#/properties/sprite">Sphere</a></p>
+</li>
+</ul>
+<h3 id="sprite-type">sprite Type</h3>
+<p><code>string</code></p>
+<h2 id="shadowsprite">shadowSprite</h2>
+<p>A shadow sprite to be drawn along the sphere. Defaults to sprites/game/ball_shadow.json.</p>
+<p><code>shadowSprite</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-shadowsprite/" title="undefined#/properties/shadowSprite">Sphere</a></p>
+</li>
+</ul>
+<h3 id="shadowsprite-type">shadowSprite Type</h3>
+<p><code>string</code></p>
+<h2 id="spriteanimationspeed">spriteAnimationSpeed</h2>
+<p>When defined, the sphere sprite will animate with that speed in frames per second. This disables rolling animation and rotation. When left out, the sphere will have their usual rolling animation and will keep rotating.</p>
+<p><code>spriteAnimationSpeed</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-spriteanimationspeed/" title="undefined#/properties/spriteAnimationSpeed">Sphere</a></p>
+</li>
+</ul>
+<h3 id="spriteanimationspeed-type">spriteAnimationSpeed Type</h3>
+<p><code>number</code></p>
+<h3 id="spriteanimationspeed-constraints">spriteAnimationSpeed Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="spriterollingspeed">spriteRollingSpeed</h2>
+<p>When defined, the sphere sprite will roll with that speed in frames per pixel. Defaults to 1.</p>
+<p><code>spriteRollingSpeed</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-spriterollingspeed/" title="undefined#/properties/spriteRollingSpeed">Sphere</a></p>
+</li>
+</ul>
+<h3 id="spriterollingspeed-type">spriteRollingSpeed Type</h3>
+<p><code>number</code></p>
+<h3 id="spriterollingspeed-constraints">spriteRollingSpeed Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="idleparticle">idleParticle</h2>
+<p>A persistent particle packet used when the sphere is on the board.</p>
+<p><code>idleParticle</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-idleparticle/" title="undefined#/properties/idleParticle">Sphere</a></p>
+</li>
+</ul>
+<h3 id="idleparticle-type">idleParticle Type</h3>
+<p><code>string</code></p>
+<h2 id="destroyparticle">destroyParticle</h2>
+<p>A one-time particle packet used when the sphere is destroyed.</p>
+<p><code>destroyParticle</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-destroyparticle/" title="undefined#/properties/destroyParticle">Sphere</a></p>
+</li>
+</ul>
+<h3 id="destroyparticle-type">destroyParticle Type</h3>
+<p><code>string</code></p>
+<h2 id="destroycollectible">destroyCollectible</h2>
+<p>A collectible generator used when the sphere is destroyed.</p>
+<p><code>destroyCollectible</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-destroycollectible/" title="undefined#/properties/destroyCollectible">Sphere</a></p>
+</li>
+</ul>
+<h3 id="destroycollectible-type">destroyCollectible Type</h3>
+<p><code>string</code></p>
+<h2 id="destroysound">destroySound</h2>
+<p>A sound event to be played when a sphere of this type is destroyed. Note: This will be played for each single sphere removed from the board. You may want to check out match sound events instead. Warning! This works only for crushed scarabs for now.</p>
+<p><code>destroySound</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-destroysound/" title="undefined#/properties/destroySound">Sphere</a></p>
+</li>
+</ul>
+<h3 id="destroysound-type">destroySound Type</h3>
+<p><code>string</code></p>
+<h2 id="color">color</h2>
+<p>The color or color palette used by shooting retical.</p>
+<p><code>color</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: merged type (<a href="../sphere-properties-color/">Details</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-color/" title="undefined#/properties/color">Sphere</a></p>
+</li>
+</ul>
+<h3 id="color-type">color Type</h3>
+<p>merged type (<a href="../sphere-properties-color/">Details</a>)</p>
+<p>any of</p>
+<ul>
+<li>
+<p><a href="../sphere-properties-color-anyof-0/" title="check type definition">Untitled string in Sphere</a></p>
+</li>
+<li>
+<p><a href="../color/" title="check type definition">Color</a></p>
+</li>
+</ul>
+<h2 id="colorspeed">colorSpeed</h2>
+<p>Must be present only if color is a color palette pointer. Defines how fast (in pixels per second) will the palette be animated.</p>
+<p><code>colorSpeed</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-colorspeed/" title="undefined#/properties/colorSpeed">Sphere</a></p>
+</li>
+</ul>
+<h3 id="colorspeed-type">colorSpeed Type</h3>
+<p><code>number</code></p>
+<h3 id="colorspeed-constraints">colorSpeed Constraints</h3>
+<p><strong>minimum (exclusive)</strong>: the value of this number must be greater than: <code>0</code></p>
+<h2 id="interchangeable">interchangeable</h2>
+<p>Whether this sphere can be changed when in the first slot of the shooter.</p>
+<p><code>interchangeable</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-interchangeable/" title="undefined#/properties/interchangeable">Sphere</a></p>
+</li>
+</ul>
+<h3 id="interchangeable-type">interchangeable Type</h3>
+<p><code>boolean</code></p>
+<h2 id="shootbehavior">shootBehavior</h2>
+<p>A persistent particle packet used when the sphere is on the board.</p>
+<blockquote>
+<p>I'll leave this for later........... Fun !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! &gt;:(&gt;:(&gt;:(!</p>
+</blockquote>
+<p><code>shootBehavior</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_shoot_behavior/" title="undefined#/properties/shootBehavior">Sphere</a></p>
+</li>
+</ul>
+<h3 id="shootbehavior-type">shootBehavior Type</h3>
+<p><code>object</code> (<a href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>)</p>
+<p>all of</p>
+<ul>
+<li>
+<p><a href="../sphere_shoot_behavior-allof-0/" title="check type definition">Untitled undefined type in Sphere Shoot Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_shoot_behavior-allof-1/" title="check type definition">Untitled undefined type in Sphere Shoot Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_shoot_behavior-allof-2/" title="check type definition">Untitled undefined type in Sphere Shoot Behavior</a></p>
+</li>
+</ul>
+<h2 id="shooteffects">shootEffects</h2>
+<p>A list of collectible effects to be applied when this sphere is shot.</p>
+<p><code>shootEffects</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>object[]</code> (<a href="../collectible_effect/">Collectable Effect</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-shooteffects/" title="undefined#/properties/shootEffects">Sphere</a></p>
+</li>
+</ul>
+<h3 id="shooteffects-type">shootEffects Type</h3>
+<p><code>object[]</code> (<a href="../collectible_effect/">Collectable Effect</a>)</p>
+<h2 id="shootspeed">shootSpeed</h2>
+<p>If specified, overrides the speed of this sphere when shot.</p>
+<p><code>shootSpeed</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-shootspeed/" title="undefined#/properties/shootSpeed">Sphere</a></p>
+</li>
+</ul>
+<h3 id="shootspeed-type">shootSpeed Type</h3>
+<p><code>number</code></p>
+<h3 id="shootspeed-constraints">shootSpeed Constraints</h3>
+<p><strong>minimum (exclusive)</strong>: the value of this number must be greater than: <code>0</code></p>
+<h2 id="shootsound">shootSound</h2>
+<p>A sound event launched when this sphere is shot.</p>
+<p><code>shootSound</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-shootsound/" title="undefined#/properties/shootSound">Sphere</a></p>
+</li>
+</ul>
+<h3 id="shootsound-type">shootSound Type</h3>
+<p><code>string</code></p>
+<h2 id="hitbehavior">hitBehavior</h2>
+<p>Defines how this sphere should behave when it hits a sphere train.</p>
+<p><code>hitBehavior</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>object</code> (<a href="../sphere_hit_behavior/">Sphere Hit Behavior</a>)</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_hit_behavior/" title="undefined#/properties/hitBehavior">Sphere</a></p>
+</li>
+</ul>
+<h3 id="hitbehavior-type">hitBehavior Type</h3>
+<p><code>object</code> (<a href="../sphere_hit_behavior/">Sphere Hit Behavior</a>)</p>
+<p>all of</p>
+<ul>
+<li>
+<p><a href="../sphere_hit_behavior-allof-0/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_hit_behavior-allof-1/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_hit_behavior-allof-2/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_hit_behavior-allof-3/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_hit_behavior-allof-4/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+<li>
+<p><a href="../sphere_hit_behavior-allof-5/" title="check type definition">Untitled undefined type in Sphere Hit Behavior</a></p>
+</li>
+</ul>
+<h2 id="hitsound">hitSound</h2>
+<p>A sound event launched when this sphere hits a sphere train.</p>
+<p><code>hitSound</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-hitsound/" title="undefined#/properties/hitSound">Sphere</a></p>
+</li>
+</ul>
+<h3 id="hitsound-type">hitSound Type</h3>
+<p><code>string</code></p>
+<h2 id="hitsoundbad">hitSoundBad</h2>
+<p>An optional sound event launched when this sphere hits a sphere train and doesn't match any neighboring spheres.</p>
+<p><code>hitSoundBad</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-hitsoundbad/" title="undefined#/properties/hitSoundBad">Sphere</a></p>
+</li>
+</ul>
+<h3 id="hitsoundbad-type">hitSoundBad Type</h3>
+<p><code>string</code></p>
+<h2 id="type">type</h2>
+<p>The sphere type. If stone, a sphere can be destroyed by a nearby match.</p>
+<p><code>type</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: unknown</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-type/" title="undefined#/properties/type">Sphere</a></p>
+</li>
+</ul>
+<h3 id="type-type">type Type</h3>
+<p>unknown</p>
+<h3 id="type-constraints">type Constraints</h3>
+<p><strong>enum</strong>: the value of this property must be equal to one of the following values:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Value</th>
+<th align="left">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>"normal"</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>"stone"</code></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="matches">matches</h2>
+<p>A list of sphere type IDs (integers) this sphere type matches with.</p>
+<p><code>matches</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>integer[]</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-matches/" title="undefined#/properties/matches">Sphere</a></p>
+</li>
+</ul>
+<h3 id="matches-type">matches Type</h3>
+<p><code>integer[]</code></p>
+<h2 id="matchfont">matchFont</h2>
+<p>A font used to display a floating text when this sphere gives points.</p>
+<p><code>matchFont</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere-properties-matchfont/" title="undefined#/properties/matchFont">Sphere</a></p>
+</li>
+</ul>
+<h3 id="matchfont-type">matchFont Type</h3>
+<p><code>string</code></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../shooter_movement/" class="btn btn-neutral float-left" title="Shooter Movement"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sphere_effect/" class="btn btn-neutral float-right" title="Sphere Effect">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../shooter_movement/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sphere_effect/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

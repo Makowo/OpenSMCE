@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema","type":"object","title":"Vector2","properties":{"x":{"type":"number","title":"X","description":"The horizontal component of a 2D vector."},"y":{"type":"number","title":"Y","description":"The vertical component of a 2D vector."}},"required":["x","y"]}

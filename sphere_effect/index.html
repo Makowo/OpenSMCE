@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Sphere Effect - My Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sphere Effect";
+        var mkdocs_page_input_path = "sphere_effect.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configs</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible/">Collectible</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../collectible_effect/">Collectible Effect</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gameplay/">Gameplay</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highscores/">Highscores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter/">Shooter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../shooter_movement/">Shooter Movement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere/">Sphere</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Sphere Effect</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#sphere-effect-type">Sphere Effect Type</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_hit_behavior/">Sphere Hit Behavior</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sphere_shoot_behavior/">Sphere Shoot Behavior</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Structures</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color/">Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector2/">Vector2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vector3/">Vector3</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../about/license.md">License</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../about/release-notes.md">Release Notes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Configs &raquo;</li>
+      <li>Sphere Effect</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sphere-effect-schema">Sphere Effect Schema</h1>
+<pre><code class="language-txt">undefined
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">Abstract</th>
+<th align="left">Extensible</th>
+<th align="left">Status</th>
+<th align="left">Identifiable</th>
+<th align="left">Custom Properties</th>
+<th align="left">Additional Properties</th>
+<th align="left">Access Restrictions</th>
+<th align="left">Defined In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Can be instantiated</td>
+<td align="left">No</td>
+<td align="left">Unknown status</td>
+<td align="left">No</td>
+<td align="left">Forbidden</td>
+<td align="left">Forbidden</td>
+<td align="left">none</td>
+<td align="left"><a href="config/sphere_effect.json" title="open original schema">sphere_effect.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sphere-effect-type">Sphere Effect Type</h2>
+<p><code>object</code> (<a href="./">Sphere Effect</a>)</p>
+<h1 id="sphere-effect-properties">Sphere Effect Properties</h1>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Type</th>
+<th align="left">Required</th>
+<th align="left">Nullable</th>
+<th align="left">Defined by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#schema">$schema</a></td>
+<td align="left">Not specified</td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="undefined.md" title="undefined#undefined">Untitled schema</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#particle">particle</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-particle/" title="undefined#/properties/particle">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#time">time</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-time/" title="undefined#/properties/time">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#infectionsize">infectionSize</a></td>
+<td align="left"><code>integer</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-infectionsize/" title="undefined#/properties/infectionSize">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#infectiontime">infectionTime</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-infectiontime/" title="undefined#/properties/infectionTime">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#applysound">applySound</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-applysound/" title="undefined#/properties/applySound">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroysound">destroySound</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-destroysound/" title="undefined#/properties/destroySound">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroyfont">destroyFont</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-destroyfont/" title="undefined#/properties/destroyFont">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroyparticle">destroyParticle</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-destroyparticle/" title="undefined#/properties/destroyParticle">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#destroycollectible">destroyCollectible</a></td>
+<td align="left"><code>string</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-destroycollectible/" title="undefined#/properties/destroyCollectible">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#levellossprotection">levelLossProtection</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-levellossprotection/" title="undefined#/properties/levelLossProtection">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#immobile">immobile</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-immobile/" title="undefined#/properties/immobile">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#fragile">fragile</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-fragile/" title="undefined#/properties/fragile">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#canboostcombo">canBoostCombo</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-canboostcombo/" title="undefined#/properties/canBoostCombo">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#canboostchain">canBoostChain</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-canboostchain/" title="undefined#/properties/canBoostChain">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#applychainmultiplier">applyChainMultiplier</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-applychainmultiplier/" title="undefined#/properties/applyChainMultiplier">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#cankeepcombo">canKeepCombo</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-cankeepcombo/" title="undefined#/properties/canKeepCombo">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#causecheck">causeCheck</a></td>
+<td align="left"><code>boolean</code></td>
+<td align="left">Required</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-causecheck/" title="undefined#/properties/causeCheck">Sphere Effect</a></td>
+</tr>
+<tr>
+<td align="left"><a href="#ghosttime">ghostTime</a></td>
+<td align="left"><code>number</code></td>
+<td align="left">Optional</td>
+<td align="left">cannot be null</td>
+<td align="left"><a href="../sphere_effect-properties-ghosttime/" title="undefined#/properties/ghostTime">Sphere Effect</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">$schema</h2>
+<p>no description</p>
+<p><code>$schema</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: unknown</p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="undefined.md" title="undefined#undefined">Untitled schema</a></p>
+</li>
+</ul>
+<h3 id="untitled-schema-type">Untitled schema Type</h3>
+<p>unknown</p>
+<h2 id="particle">particle</h2>
+<p>A persistent particle packet which will be applied to any affected sphere.</p>
+<p><code>particle</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-particle/" title="undefined#/properties/particle">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="particle-type">particle Type</h3>
+<p><code>string</code></p>
+<h2 id="time">time</h2>
+<p>After how many seconds the spheres will be destroyed.</p>
+<p><code>time</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-time/" title="undefined#/properties/time">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="time-type">time Type</h3>
+<p><code>number</code></p>
+<h3 id="time-constraints">time Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="infectionsize">infectionSize</h2>
+<p>How many times the effect expansion should occur.</p>
+<p><code>infectionSize</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>integer</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-infectionsize/" title="undefined#/properties/infectionSize">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="infectionsize-type">infectionSize Type</h3>
+<p><code>integer</code></p>
+<h3 id="infectionsize-constraints">infectionSize Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="infectiontime">infectionTime</h2>
+<p>Time between the expansions, in seconds.</p>
+<p><code>infectionTime</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-infectiontime/" title="undefined#/properties/infectionTime">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="infectiontime-type">infectionTime Type</h3>
+<p><code>number</code></p>
+<h3 id="infectiontime-constraints">infectionTime Constraints</h3>
+<p><strong>minimum</strong>: the value of this number must greater than or equal to: <code>0</code></p>
+<h2 id="applysound">applySound</h2>
+<p>A sound event to be played when a sphere gets this effect.</p>
+<p><code>applySound</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-applysound/" title="undefined#/properties/applySound">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="applysound-type">applySound Type</h3>
+<p><code>string</code></p>
+<h2 id="destroysound">destroySound</h2>
+<p>A sound event to be played when spheres afflicted with this effect are destroyed.
+Can be set to "hardcoded", in that case the destroy sound from a game module is prioritized.</p>
+<p><code>destroySound</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-destroysound/" title="undefined#/properties/destroySound">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="destroysound-type">destroySound Type</h3>
+<p><code>string</code></p>
+<h2 id="destroyfont">destroyFont</h2>
+<p>A font to be used for the score value displayed on the screen.
+Can be set to "hardcoded", in that case the font used is of the "cause" sphere's matchFont value.</p>
+<p><code>destroyFont</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-destroyfont/" title="undefined#/properties/destroyFont">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="destroyfont-type">destroyFont Type</h3>
+<p><code>string</code></p>
+<h2 id="destroyparticle">destroyParticle</h2>
+<p>A one-time particle packet used when a sphere with this effect is destroyed.</p>
+<p><code>destroyParticle</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-destroyparticle/" title="undefined#/properties/destroyParticle">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="destroyparticle-type">destroyParticle Type</h3>
+<p><code>string</code></p>
+<h2 id="destroycollectible">destroyCollectible</h2>
+<p>The collectible generator to be used when spheres with this effect are destroyed.</p>
+<p><code>destroyCollectible</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>string</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-destroycollectible/" title="undefined#/properties/destroyCollectible">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="destroycollectible-type">destroyCollectible Type</h3>
+<p><code>string</code></p>
+<h2 id="levellossprotection">levelLossProtection</h2>
+<p>If set to true, a group with spheres with this effect applied will not trigger a level loss when past the path's end node.</p>
+<p><code>levelLossProtection</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-levellossprotection/" title="undefined#/properties/levelLossProtection">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="levellossprotection-type">levelLossProtection Type</h3>
+<p><code>boolean</code></p>
+<h2 id="immobile">immobile</h2>
+<p>If true, the spheres affected with this effect will stop.</p>
+<p><code>immobile</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-immobile/" title="undefined#/properties/immobile">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="immobile-type">immobile Type</h3>
+<p><code>boolean</code></p>
+<h2 id="fragile">fragile</h2>
+<p>If true, the spheres affected with this effect can be destroyed by shooting through them.</p>
+<p><code>fragile</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-fragile/" title="undefined#/properties/fragile">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="fragile-type">fragile Type</h3>
+<p><code>boolean</code></p>
+<h2 id="canboostcombo">canBoostCombo</h2>
+<p>If true, the level combo value may rise after destroying a group with this effect.</p>
+<p><code>canBoostCombo</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-canboostcombo/" title="undefined#/properties/canBoostCombo">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="canboostcombo-type">canBoostCombo Type</h3>
+<p><code>boolean</code></p>
+<h2 id="canboostchain">canBoostChain</h2>
+<p>If true, the chain combo value may rise after destroying a group with this effect.</p>
+<p><code>canBoostChain</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-canboostchain/" title="undefined#/properties/canBoostChain">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="canboostchain-type">canBoostChain Type</h3>
+<p><code>boolean</code></p>
+<h2 id="applychainmultiplier">applyChainMultiplier</h2>
+<p>If true, the score value obtained from destroying the affected spheres will be multiplied by the current chain combo value.</p>
+<p><code>applyChainMultiplier</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-applychainmultiplier/" title="undefined#/properties/applyChainMultiplier">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="applychainmultiplier-type">applyChainMultiplier Type</h3>
+<p><code>boolean</code></p>
+<h2 id="cankeepcombo">canKeepCombo</h2>
+<p>Whether shot spheres with this effect should not be counted towards combo reset.</p>
+<p><code>canKeepCombo</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-cankeepcombo/" title="undefined#/properties/canKeepCombo">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="cankeepcombo-type">canKeepCombo Type</h3>
+<p><code>boolean</code></p>
+<h2 id="causecheck">causeCheck</h2>
+<p>When set to true, two groups of spheres of the same sphere effect which happen to collide will behave as one, ignoring the "cause" sphere.</p>
+<p><code>causeCheck</code></p>
+<ul>
+<li>
+<p>is required</p>
+</li>
+<li>
+<p>Type: <code>boolean</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-causecheck/" title="undefined#/properties/causeCheck">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="causecheck-type">causeCheck Type</h3>
+<p><code>boolean</code></p>
+<h2 id="ghosttime">ghostTime</h2>
+<p>Optional. If defined, the spheres will not be destroyed, but instead will transform into ghosts. This means they will appear as destroyed, but will still physically exist for the given time. It is highly recommended to not set this, as ghost spheres are designed for Zuma sphere physics recreation.</p>
+<p><code>ghostTime</code></p>
+<ul>
+<li>
+<p>is optional</p>
+</li>
+<li>
+<p>Type: <code>number</code></p>
+</li>
+<li>
+<p>cannot be null</p>
+</li>
+<li>
+<p>defined in: <a href="../sphere_effect-properties-ghosttime/" title="undefined#/properties/ghostTime">Sphere Effect</a></p>
+</li>
+</ul>
+<h3 id="ghosttime-type">ghostTime Type</h3>
+<p><code>number</code></p>
+<h3 id="ghosttime-constraints">ghostTime Constraints</h3>
+<p><strong>minimum (exclusive)</strong>: the value of this number must be greater than: <code>0</code></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sphere/" class="btn btn-neutral float-left" title="Sphere"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sphere_hit_behavior/" class="btn btn-neutral float-right" title="Sphere Hit Behavior">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sphere/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sphere_hit_behavior/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
