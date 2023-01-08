@@ -6,6 +6,11 @@ local UI2Node = class:derive("UI2Node")
 
 -- Place your imports here
 local UI2WidgetRectangle = require("src/UI2/WidgetRectangle")
+local UI2WidgetSprite = require("src/UI2/WidgetSprite")
+--local UI2WidgetSpriteButton = require("src/UI2/WidgetSpriteButton")
+--local UI2WidgetSpriteButtonCheckbox = require("src/UI2/WidgetSpriteButtonCheckbox")
+--local UI2WidgetSpriteButtonSlider = require("src/UI2/WidgetSpriteButtonSlider")
+local UI2WidgetSpriteProgress = require("src/UI2/WidgetSpriteProgress")
 
 local Vec2 = require("src/Essentials/Vector2")
 
@@ -41,6 +46,10 @@ function UI2Node:new(config, name, parent)
     if w then
         if w.type == "rectangle" then
             self.widget = UI2WidgetRectangle(self, w.align, w.size, w.color)
+        elseif w.type == "sprite" then
+            self.widget = UI2WidgetSprite(self, w.sprite, w.align)
+        elseif w.type == "spriteProgress" then
+            self.widget = UI2WidgetSpriteProgress(self, w.sprite, w.align, w.value, w.smooth)
         end
     end
 end

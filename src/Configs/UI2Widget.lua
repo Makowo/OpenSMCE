@@ -27,6 +27,15 @@ function UI2WidgetConfig:new(data, path)
         self.size = _ParseVec2(data.size) or Vec2()
         ---@type Color
         self.color = _ParseColor(data.color) or Color()
+    elseif self.type == "sprite" then
+        self.size = _ParseVec2(data.size) or Vec2()
+
+        self.sprite = data.sprite
+    elseif self.type == "spriteProgress" then
+        self.size = _ParseVec2(data.size) or Vec2()
+        self.value = data.value
+        self.smooth = data.smooth
+        self.sprite = data.sprite
     else
         error(string.format("Failed to load file %s, unknown Widget type: %s (expected \"rectangle\")", path, self.type))
     end

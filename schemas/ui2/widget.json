@@ -4,7 +4,9 @@
     "properties": {
         "type": {
             "enum": [
-                "rectangle"
+                "rectangle",
+                "sprite",
+                "spriteProgress"
             ]
         },
         "align": {
@@ -48,6 +50,71 @@
                 "required": [
                     "size",
                     "color"
+                ],
+                "additionalProperties": false
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "type": {
+                        "const": "sprite",
+                        "description": "A sprite."
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            },
+            "then": {
+                "properties": {
+                    "type": true,
+                    "align": true,
+                    "sprite": {
+                        "type": "string",
+                        "description": "The path to the sprite."
+                    }
+                },
+                "required": [
+                    "sprite"
+                ],
+                "additionalProperties": false
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "type": {
+                        "const": "spriteProgress",
+                        "description": "TODO: A sprite that progresses!"
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            },
+            "then": {
+                "properties": {
+                    "type": true,
+                    "align": true,
+                    "sprite": {
+                        "type": "string",
+                        "description": "The path to the sprite."
+                    },
+                    "value": {
+                        "type": "integer",
+                        "description": "TODO: A number value."
+                    },
+                    "smooth": {
+                        "type":"boolean",
+                        "description": "TODO:"
+                    }
+
+                },
+                "required": [
+                    "sprite",
+                    "value",
+                    "smooth"
                 ],
                 "additionalProperties": false
             }
